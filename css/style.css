@@ -93,6 +93,17 @@ input {
   color: #b7e1f3;
 }
 
+.buger{
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon/Menu_основное.svg) no-repeat center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-right: 40px;
+}
+
 /*==================================================================================
                                     HEADER end
 =====================================================================================*/
@@ -156,6 +167,13 @@ input {
   display: flex;
   align-items: center;
 }
+
+.logo{
+  width: 240px;
+  height: 60px;
+  background: url(../img/icon/Logo.svg);
+}
+
 
 .burger {
   margin-right: 40px;
