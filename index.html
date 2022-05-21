@@ -11,7 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/scroll.js" defer></script>
+    <script src="./js/lists.js" defer></script>
     <title>Берегиня</title>
+    
   </head>
   <body>
     <header class="header">
@@ -36,16 +40,61 @@
             </div>
             <div class="span__block_not">
               <img src="./img/icon/interface.svg" alt="img" class="what" />
-              <p class="adress__email">info@bereginya.ru — написать письмо</p>
+              <a class="adress__email">info@bereginya.ru — написать письмо</a>
             </div>
           </div>
         </div>
       </div>
     </header>
 
+    
+
     <main>
       <section class="promo">
         <div class="container">
+          <div class="modal__bg_email">
+            <div class="wrapp__email">
+              <div class="modal__email">
+                <h3 class="tile__modal_email">
+                  Мы вам напишем
+                </h3>
+  
+                <p class="text_mod_email">
+                  Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся рассылкой рекламных сообщений, а так же<br> не передаем контактные данные третьим лицам
+                </p>
+                <a href="#" class="close_email_mod"></a>
+                <div class="input_name_block">
+                    <input type="text" class="modal_email_un" placeholder="Ваше имя">
+                    <input type="text" class="modal_email_un" placeholder="Ваша e-mail">
+                    <input type="text" class="modal_email_un" placeholder="Ваш телефон">
+                </div>
+                <!-- /.input_name_block -->
+  
+                <div class="massenge">
+                  <input type="text" class="mes_input" placeholder="Опишите свою проблему ...">
+                </div>
+                <!-- /.massenge -->
+  
+                <div class="btn__ckeckid">
+                  <a href="" class="btn_panel_bran">Перезвоните мне</a>
+                  <div class="check_box">
+                      <label class="label">
+                        <input type="checkbox" class="checkbox" />
+                        <span class="fake"> </span>
+                       <span class="text_chek_panel">
+                          <span class="text__check">
+                              Согласие на обработку 
+                            </span>
+                            <span class="text__check_sub">
+                              персональных данных
+                            </span>
+                       </span>
+                      </label>
+                    </div>
+              </div>
+              </div>
+            </div>
+          </div>
           <div class="block__promo">
             <div class="block__logo">
               <div class="burger__menu">
@@ -77,7 +126,7 @@
                   class="call__icon"
                 />
 
-                <p class="numb__call">8 (903) 578-85-77</p>
+                <a class="numb__call">8 (903) 578-85-77</a>
 
                 <a href="#" class="requestcall"> заказать звонок </a>
               </div>
@@ -149,7 +198,8 @@
               <a href="#" class="down"> </a>
             </div>
 
-              <div class="drop__wrapp">
+              <div class="window_close">
+                <div class="drop__wrapp">
                   <div class="drop_close">
                     <a href="#" class="close__burger"></a>
                     <div class="dropdown_box">
@@ -201,6 +251,7 @@
       </div>
                   </div>
               </div>
+              </div>
           </div>
 
          <div class="wrapp_window">
@@ -226,19 +277,19 @@
                 </div>
     
                 <div class="btn__ckeckid">
-                    <a href="" class="btn_panel_bran">Перезвоните мне</a>
+                    <a href="#" class="btn_panel_bran">Перезвоните мне</a>
                     <div class="check_box">
                         <label class="label">
                           <input type="checkbox" class="checkbox" />
                           <span class="fake"> </span>
-                         <div class="text_chek_panel">
+                         <span class="text_chek_panel">
                             <span class="text__check">
                                 Согласие на обработку 
                               </span>
                               <span class="text__check_sub">
                                 персональных данных
                               </span>
-                         </div>
+                         </span>
                         </label>
                       </div>
                 </div>
@@ -471,10 +522,10 @@
                     
                 </div>
             </div>
-              <a href="#" class="btn__sorting"> Тип </a>
-              <a href="#" class="btn__sorting"> Категория </a>
-              <a href="#" class="btn__sorting"> Назначение </a>
-              <a href="#" class="btn__sorting sett_sorting"> Бренд </a>
+              <a href="#" class="btn__sorting_center"> Тип </a>
+              <a href="#" class="btn__sorting_center"> Категория </a>
+              <a href="#" class="btn__sorting_center"> Назначение </a>
+              <a href="#" class="btn__sorting_center sett_sorting"> Бренд </a>
               <a href="#" class="btn__sorting_right"> Сортировка </a>
               <div class="wrapp_sor_List">
                 <div class="sortin__list">
@@ -973,10 +1024,12 @@
           <div class="bg_modal">
             <div class="modal__catalog_wrapp">
               <div class="modal__catalog">
-                  <h3 class="mod__cat">
-                    Быстрый заказ
-                  </h3>
-  
+                  <div class="wrapp_close">
+                    <h3 class="mod__cat">
+                      Быстрый заказ
+                    </h3>
+                    <a href="#" class="close__modal_wind"></a>
+                  </div>
                   <div class="basket__strip">
                     <div class="block_mod_img">
                       <img src="./img/icon/botmod.svg" alt="img" class="bott_mod">
@@ -1133,19 +1186,19 @@
                   <!-- /.cont_input -->
   
                   <div class="btn__ckeckid">
-                      <a href="" class="btn_panel_bran">Перезвоните мне</a>
+                      <a href="" class="btn_panel_bran_open">Перезвоните мне</a>
                       <div class="check_box">
                           <label class="label">
                             <input type="checkbox" class="checkbox" />
                             <span class="fake"> </span>
-                           <div class="text_chek_panel">
+                           <span class="text_chek_panel">
                               <span class="text__check">
                                   Согласие на обработку 
                                 </span>
                                 <span class="text__check_sub">
                                   персональных данных
                                 </span>
-                           </div>
+                           </span>
                           </label>
                         </div>
                   </div>
@@ -1154,6 +1207,33 @@
               </div>
             </div>
             <!-- /.modal__catalog_wrapp -->
+          </div>
+
+          <div class="bg__modal_two">
+            <div class="modal_thank">
+              <a href="#" class="close_thank"></a>
+              <img src="./img/icon/shoppingcartBig.svg" alt="" class="cart_thank">
+              <p class="text_thank">
+                Спасибо, Ваш товар добавлен<br> в корзину!
+              </p>
+              <div class="block_btn_thank">
+                <a href="" class="proceed">Продолжить покупки</a>
+                <a href="" class="issue">Оформить заказ</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal__free_bg">
+            <div class="wrapp__free">
+              <div class="modal__free">
+                <span class="on">
+                  
+                </span>
+                <p class="text_on">
+                  Заявка принята
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
