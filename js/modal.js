@@ -112,3 +112,13 @@ modalFree.addEventListener("click", (e) => {
     modalFree.style.display = "none";
   }
 });
+
+//поиск 
+
+const search = document.querySelector(".search")
+const searchInput = document.querySelector(".search__active")
+
+search.addEventListener("click", (e) => {
+  e.preventDefault();
+  searchInput.style.display = "flex";
+});

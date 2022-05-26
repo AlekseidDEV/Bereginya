@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media.css" />
     <script src="../js/modal.js" defer="defer"></script>
     <script src="../js/scroll.js" defer="defer"></script>
     <script src="../js/lists.js" defer="defer"></script>
@@ -31,7 +32,7 @@
               <img src="../img/icon/whatsapp1.svg" alt="img" class="what" />
               <p class="numb">8 (903) 578-85-77</p>
             </div>
-            <div class="span__block">
+            <div class="span__block_teleg">
               <img src="../img/icon/telegram2.svg" alt="img" class="what" />
               <p class="adress__teleg">@bereginya.ru</p>
             </div>
@@ -43,6 +44,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="promo">
         <div class="container">
@@ -135,7 +137,7 @@
               <div class="icon__time">
                 <!--подблок (колонка) -->
                 <h2 class="title__time">
-                  Берегиня — это<br />здоровье, энергия<br />и вдохновение
+                  Берегиня — это<br /> здоровье, энергия<br />и вдохновение
                 </h2>
                 <!--контентная часть (сверху и с низу)-->
                 <div class="icons">
@@ -158,8 +160,8 @@
               <div class="block__eat">
                 <!--подблок (колонка)-->
                 <p class="text__eat">
-                  Благодаря вулканическим минералам жизнь бьет<br />ключом.
-                  Неважно – офлайн или онлайн. В ритме города<br />или стихии.
+                  Благодаря вулканическим минералам жизнь бьет <br />ключом.
+                  Неважно – офлайн или онлайн. В ритме города <br />или стихии.
                   Дома, на море, на газоне, под колонкой, на<br />балконе.
                   Неважно, в 30 или в 130! Когда ты полон<br />здоровья, истории
                   начинаются снова и снова
@@ -238,7 +240,10 @@
           <div class="wrapp_window">
             <div class="modal_window">
               <div class="wind">
-                <h3 class="title__wind">Мы вам перезвоним</h3>
+                <div class="close__modal">
+                  <h3 class="title__wind">Мы вам перезвоним</h3>
+                  <a href="#" class="close_btn"></a>
+                </div>
                 <p class="text__wind">
                   Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся
                   рассылкой рекламных сообщений, а так же не<br />передаем
@@ -258,9 +263,6 @@
                     />
                   </div>
                   <!-- /.cont_input -->
-                  <div class="close__modal">
-                    <a href="#" class="close_btn"></a>
-                  </div>
                   <div class="btn__ckeckid">
                     <a href="#" class="btn_panel_bran">Перезвоните мне</a>
                     <div class="check_box">
@@ -284,6 +286,7 @@
           </div>
         </div>
       </section>
+
       <section class="plan__products">
         <div class="container">
           <div class="text__plant">
@@ -299,6 +302,32 @@
           </div>
           <div class="card__plant">
             <div class="sup__card">
+              <div class="card__product">
+                <div class="circle">
+                  <img src="../img/Component3.png" alt="img" class="bereg" />
+                </div>
+                <a href="#" class="btn__product">Питьевая вода</a>
+              </div>
+              <div class="card__product">
+                <div class="circle">
+                  <img src="../img/Component3.png" alt="img" class="bereg" />
+                </div>
+                <a href="#" class="btn__product">Берегиня-1</a>
+              </div>
+              <div class="card__product">
+                <div class="circle">
+                  <img src="../img/Component1.png" alt="img" class="drink" />
+                </div>
+                <a href="#" class="btn__product">Газированные напитки</a>
+              </div>
+              <div class="card__product">
+                <div class="circle">
+                  <img src="../img/Component2.png" alt="img" class="bott" />
+                </div>
+                <a href="#" class="btn__product padd"
+                  >Ассортимент<br />питьевых вод</a
+                >
+              </div>
               <div class="card__product">
                 <div class="circle">
                   <img src="../img/Component1.png" alt="img" class="drink" />
@@ -327,32 +356,6 @@
               </div>
             </div>
             <div class="sub__card">
-              <div class="card__product">
-                <div class="circle">
-                  <img src="../img/Component3.png" alt="img" class="bereg" />
-                </div>
-                <a href="#" class="btn__product">Питьевая вода</a>
-              </div>
-              <div class="card__product">
-                <div class="circle">
-                  <img src="../img/Component3.png" alt="img" class="bereg" />
-                </div>
-                <a href="#" class="btn__product">Берегиня-1</a>
-              </div>
-              <div class="card__product">
-                <div class="circle">
-                  <img src="../img/Component1.png" alt="img" class="drink" />
-                </div>
-                <a href="#" class="btn__product">Газированные напитки</a>
-              </div>
-              <div class="card__product">
-                <div class="circle">
-                  <img src="../img/Component2.png" alt="img" class="bott" />
-                </div>
-                <a href="#" class="btn__product padd"
-                  >Ассортимент<br />питьевых вод</a
-                >
-              </div>
             </div>
           </div>
           <div class="benefits">
@@ -365,7 +368,7 @@
                     alt="img"
                     class="panel__img"
                   />
-                  <p class="text__panel">Настоящая<br />горная вода</p>
+                  <p class="text__panel box_text_panel">Настоящая <br />горная вода</p>
                 </div>
                 <!-- /.panel__icons -->
                 <div class="panel__icons sett__icon">
@@ -395,7 +398,7 @@
                     class="panel__img"
                   />
                   <p class="text__panel text__sett">
-                    Натуральный<br />природний состав
+                    Натуральный <br />природний состав
                   </p>
                 </div>
                 <!-- /.panel__icons -->
@@ -416,6 +419,7 @@
         </div>
       </section>
       <!-- /.plan__products -->
+
       <section class="catalog">
         <div class="container">
           <h2 class="title__catalog">Каталог</h2>
@@ -450,9 +454,9 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn__sorting_center">Тип </a
-              ><a href="#" class="btn__sorting_center">Категория </a
-              ><a href="#" class="btn__sorting_center">Назначение </a
+              <a href="#" class="btn__sorting_center sett__typ">Тип </a
+              ><a href="#" class="btn__sorting_center sett_category">Категория </a
+              ><a href="#" class="btn__sorting_center sett_touch">Назначение </a
               ><a href="#" class="btn__sorting_center sett_sorting">Бренд </a
               ><a href="#" class="btn__sorting_right">Сортировка</a>
               <div class="wrapp_sor_List">
@@ -654,8 +658,7 @@
                 <!-- /.sub__info__card -->
               </div>
               <!-- /.card__botlle -->
-            </div>
-            <div class="strip__sub">
+
               <div class="card__botlle">
                 <div class="sup__info__card">
                   <p class="round__hot"></p>
@@ -839,6 +842,7 @@
               </div>
               <!-- /.card__botlle -->
             </div>
+            
             <div class="full">
               <a class="btn__full_catalog">Полный каталог</a>
             </div>
@@ -1060,41 +1064,44 @@
       <!-- /.catalog -->
       <section class="our__service">
         <div class="container">
-          <div class="wrapp__panel">
-            <div class="block__panel_our">
-              <div class="block__content">
-                <div class="text__content">
-                  <h2 class="title__our">Вулканическое происхождение</h2>
-                  <p class="text__our">
-                    Слабоминерализованная вода заволжского водоносного горизонта
-                    имеет сульфанный<br />натриево-магниево-кальциевый состав со
-                    слабощелочной реакцией среды (pH 7,3 - 7,5) и<br />минерализацией
-                    в диапазоне 3,5 - 3,8 г/дм3.
-                  </p>
-                  <div class="panel__tabs">
-                    <div class="tab set__tab__one">
-                      <p class="namb__title">1500</p>
-                      <p class="text__tab">Лет в недрах</p>
+          <div class="block_panel-cont">
+            <div class="wrapp__panel">
+              <div class="block__panel_our">
+                <div class="block__content">
+                  <div class="text__content">
+                    <h2 class="title__our">Вулканическое происхождение</h2>
+                    <p class="text__our">
+                      Слабоминерализованная вода заволжского водоносного горизонта
+                      имеет сульфанный<br />натриево-магниево-кальциевый состав со
+                      слабощелочной реакцией среды (pH 7,3 - 7,5) и<br />минерализацией
+                      в диапазоне 3,5 - 3,8 г/дм3.
+                    </p>
+                    <div class="panel__tabs">
+                      <div class="tab set__tab__one">
+                        <p class="namb__title">1500</p>
+                        <p class="text__tab">Лет в недрах</p>
+                      </div>
+                      <div class="tab">
+                        <p class="namb__title">8-10 км</p>
+                        <p class="text__tab">глубина скважин</p>
+                      </div>
+                      <div class="tab sett-tab">
+                        <p class="namb__title">60</p>
+                        <p class="text__tab">минералов в составе</p>
+                      </div>
                     </div>
-                    <div class="tab">
-                      <p class="namb__title">8-10 км</p>
-                      <p class="text__tab">глубина скважин</p>
-                    </div>
-                    <div class="tab sett-tab">
-                      <p class="namb__title">60</p>
-                      <p class="text__tab">минералов в составе</p>
-                    </div>
+                    <!-- /.panel__tabs -->
                   </div>
-                  <!-- /.panel__tabs -->
+                  <!-- /.text__content -->
                 </div>
-                <!-- /.text__content -->
+                <!-- /.block__content -->
+                <div class="block__img__panel"></div>
+                <!-- /.block__img__panel -->
               </div>
-              <!-- /.block__content -->
-              <div class="block__img__panel"></div>
-              <!-- /.block__img__panel -->
+              <!-- /.block__panel_our -->
             </div>
-            <!-- /.block__panel_our -->
           </div>
+          <!-- /.block_panel-cont -->
           <div class="our__servic">
             <h2 class="title__card__prod">Наши услуги</h2>
             <div class="card__our">
@@ -1154,9 +1161,6 @@
                   </div>
                 </div>
                 <!-- /.card__our__prod -->
-              </div>
-              <!-- /.strip__one -->
-              <div class="strip__two">
                 <div class="card__our__prod">
                   <div class="img__prod">
                     <img
@@ -1238,8 +1242,6 @@
                   </div>
                 </div>
                 <!-- /.card__our__prod -->
-              </div>
-              <div class="strip__free">
                 <div class="card__our__prod sett__mard_b">
                   <div class="img__prod">
                     <img
@@ -1263,6 +1265,9 @@
                 </div>
                 <!-- /.card__our__prod -->
               </div>
+              <!-- /.strip__one -->
+              
+              </div>
             </div>
             <!-- /.card__our -->
           </div>
@@ -1270,6 +1275,7 @@
         </div>
       </section>
       <!-- /.our__service -->
+
       <section class="factory__showing">
         <div class="container">
           <div class="block__ifo">
@@ -1348,40 +1354,52 @@
           <div class="block__card__factory">
             <div class="card__factory">
               <p class="text__factory">Санаторий «Раменское»</p>
-              <a href="" class="btn__factory">Подробнее</a>
+              <div class="wrapp_med">
+                <a href="" class="btn__factory">Подробнее</a>
+              </div>
             </div>
             <!-- /.card__factory -->
             <div class="card__factory__one">
               <p class="text__factory">Скважина завода «Берегиня»</p>
-              <a href="" class="btn__factory">Подробнее</a>
+              <div class="wrapp_med">
+                <a href="" class="btn__factory">Подробнее</a>
+              </div>
             </div>
             <!-- /.card__factory -->
             <div class="card__factory__two">
               <p class="text__factory">
-                Цех по производству воды в<br />бутылках 0,6л - 1,5л
+                Цех по производству воды в <br />бутылках 0,6л - 1,5л
               </p>
-              <a href="" class="btn__factory">Подробнее</a>
+              <div class="wrapp_med">
+                <a href="" class="btn__factory">Подробнее</a>
+              </div>
             </div>
             <!-- /.card__factory -->
             <div class="card__factory__free">
               <p class="text__factory">
-                Цех по производству воды в<br />бутылях 5л
+                Цех по производству воды в <br />бутылях 5л
               </p>
-              <a href="" class="btn__factory">Подробнее</a>
+              <div class="wrapp_med">
+                <a href="" class="btn__factory">Подробнее</a>
+              </div>
             </div>
             <!-- /.card__factory -->
             <div class="card__factory__four">
               <p class="text__factory">
-                Цех по производству воды в<br />бутылях 19л
+                Цех по производству воды в <br />бутылях 19л
               </p>
-              <a href="" class="btn__factory">Подробнее</a>
+              <div class="wrapp_med">
+                <a href="" class="btn__factory">Подробнее</a>
+              </div>
             </div>
             <!-- /.card__factory -->
             <div class="card__factory_five">
               <p class="text__factory">
-                Артезианская скважина завода<br />«Берегиня» ГВК № 1
+                Артезианская скважина завода <br />«Берегиня» ГВК № 1
               </p>
-              <a href="" class="btn__factory">Подробнее</a>
+              <div class="wrapp_med">
+                <a href="" class="btn__factory">Подробнее</a>
+              </div>
             </div>
             <!-- /.card__factory -->
           </div>
@@ -1390,6 +1408,7 @@
         <!-- /.container -->
       </section>
       <!-- /.factory__showing -->
+
       <section class="our__clients">
         <div class="container">
           <div class="panel__people__wrapp">
@@ -1472,6 +1491,7 @@
         </div>
       </section>
       <!-- /.our__clients -->
+
       <section class="news">
         <div class="container">
           <h1 class="new__title">Интересные статьи</h1>
@@ -1573,6 +1593,7 @@
       </section>
       <!-- /.news -->
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="block__social__info">
@@ -1620,6 +1641,7 @@
             <!-- /.links__social -->
           </div>
           <!-- /.about__company -->
+        <div class="wrapp_block_med">
           <div class="info__company">
             <p class="text__company">
               © 2016—2019,<br />ООО «Берегиня», официальный<br />сайт, лицензия
@@ -1634,6 +1656,7 @@
             <a href="#" class="media__ok"></a>
           </div>
           <!-- /.social__media -->
+        </div>
         </div>
         <!-- /.block__social__info -->
         <div class="sub__footer">

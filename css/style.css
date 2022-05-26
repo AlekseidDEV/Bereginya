@@ -55,6 +55,11 @@ input {
   margin-right: 35px;
 }
 
+.span__block_teleg{
+  display: flex;
+  margin-right: 35px;
+}
+
 .span__block_not {
   display: flex;
   margin: 0;
@@ -551,18 +556,13 @@ color: #B1B7B9;
 }
 
 .modal_window{
-  position: absolute;
-  top: 340px;
-  left: 500px;
+
   z-index: 1;
 }
 
 .close__modal{
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 20px;
-  left: 990px;
+ display: flex;
+ justify-content: space-between;
 }
 
 .btn__sorting_center{
@@ -610,8 +610,9 @@ color: #B1B7B9;
 .wrapp_window{
   display: none;
  position: fixed;
- justify-content: center;
- align-items: center;
+ display: flex;
+align-items: center;
+justify-content: center;
  top: 0;
  left: 0;
  z-index: 2;
@@ -626,7 +627,6 @@ color: #B1B7B9;
 
 .wind{
   display: flex;
-  margin-left: 200px;
   flex-direction: column;
 width: 835px;
   background: #FFFFFF;
@@ -841,7 +841,7 @@ line-height: 312.4%;
 }
 
 .link_site{
-  height: 100px;
+  height: 180px;
 }
 
 .modal__catalog_wrapp{
@@ -1260,14 +1260,20 @@ background: url(../img/icon/closeModal.svg);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 90px 150px;
 }
 
-.sub__card {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 130px;
+.box_text_panel{
+  max-width:115px ;
+  width: 100%;
 }
+
+.text__sett{
+  max-width: 173px;
+  width: 100%;
+  display: flex;
+}
+
 
 .card__product {
   max-width: 228px;
@@ -1492,9 +1498,7 @@ background: url(../img/icon/closeModal.svg);
   color: #2f2f2f;
 }
 
-.btn__sorting:not(.sett_sorting) {
-  margin-right: 30px;
-}
+
 
 .btn__sorting_right {
   z-index: 1;
@@ -1521,10 +1525,17 @@ background: url(../img/icon/closeModal.svg);
   position: relative;
 }
 
+.sup__info__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card__botlle {
   max-width: 280px;
   width: 100%;
   display: flex;
+  justify-content: center;
   background: #ffffff;
   box-shadow: 0px 8px 20px rgba(75, 89, 125, 0.1);
   border-radius: 20px;
@@ -1587,6 +1598,7 @@ color: #FFFFFF;
 .card_botlle {
   margin-top: 20px;
   border-radius: 20px 20px 20px 20px;
+  display: flex;
 }
 
 .text__catalog__card {
@@ -1595,11 +1607,12 @@ color: #FFFFFF;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   color: #172733;
   margin-top: 10px;
   margin-bottom: 10px;
+  display: flex;
+  max-width: 240px;
+  width: 100%;
 }
 
 .grey__text__catalog {
@@ -1608,7 +1621,9 @@ color: #FFFFFF;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-
+  max-width: 240px;
+  width: 100%;
+  display: flex;
   color: #a4a7b0;
   margin-bottom: 20px;
 }
@@ -1754,8 +1769,11 @@ color: #FFFFFF;
 }
 
 .strip_sup {
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+  margin-bottom: 50px;
 }
 
 .strip__sub {
@@ -1943,6 +1961,12 @@ color: #FFFFFF;
   width: 100%;
 }
 
+.block_panel-cont{
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+}
+
 .block__panel_our {
   box-shadow: 0px 20px 50px rgba(5, 124, 169, 0.15);
   border-radius: 20px;
@@ -2061,6 +2085,7 @@ color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 88px 69px;
 }
 
 .strip__two {
@@ -2071,8 +2096,6 @@ color: #FFFFFF;
 
 .card__our__prod {
   display: flex;
-  margin-right: 30px;
-  margin-bottom: 88px;
   max-width: 448px;
   width: 100%;
 }
@@ -2240,6 +2263,16 @@ right: 211px;
   border-radius: 10px;
 }
 
+.sup__img__ifo{
+  display: flex;
+  gap: 17px 30px ;
+}
+
+.sub__img__ifo{
+  gap: 0px 30px ;
+  display: flex;
+}
+
 .wrapp__ifo {
   display: flex;
   justify-content: space-between;
@@ -2361,6 +2394,9 @@ right: 211px;
   margin-left: 30px;
   padding-top: 30px;
   margin-bottom: 154px;
+  display: flex;
+  max-width: 420px;
+  width: 100%;
 }
 
 .btn__factory {
@@ -2685,8 +2721,10 @@ right: 211px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-
   color: #000000;
+  display: flex;
+  max-width: 229px;
+  width: 100%;
 }
 
 .media {
@@ -2803,6 +2841,8 @@ right: 211px;
   font-size: 14px;
   line-height: 16px;
   color: #2f2f2f;
+  max-width:199px;
+  width: 100%;
 }
 
 .numb__call_footer {
