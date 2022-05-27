@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>ПЭТ тары</title>
   </head>
   <body>
@@ -73,9 +74,8 @@
             <div class="line__brand">
               <div class="text__brand">
                 <!--подблок (колонка) -->
-                <p class="title__time brand__time">
-                  Производство ПЭТ<br />тары
-                  <span class="text__small_prom">полного цикла</span>
+                <p class="title__time-prod">
+                  Производство ПЭТ <br/>тары <span class="text__small_prom">полного цикла</span>
                 </p>
                 <p class="text__brand">
                   ПЭТ имеет ряд неоспоримых преимуществ: небольшой вес,
@@ -101,17 +101,65 @@
           </div>
         </div>
       </section>
+
       <section class="catalog">
         <div class="container">
           <h2 class="title__catalog">Каталог</h2>
           <div class="filter">
             <div class="btn__filter">
-              <a href="#" class="btn__sorting">Объем </a
-              ><a href="#" class="btn__sorting">Тип </a
-              ><a href="#" class="btn__sorting">Категория </a
-              ><a href="#" class="btn__sorting">Назначение </a
-              ><a href="#" class="btn__sorting sett_sorting">Бренд </a
+              <a href="#" class="btn__sorting">Объем</a>
+              <div class="wrapp_vol_List">
+                <div class="volume__list">
+                  <div class="type__btn_vol">
+                    <a href="#" class="btn_vol">Объем</a>
+                  </div>
+                  <div class="type__list_volume_big">
+                    <p class="text_list_vol">19 литров</p>
+                  </div>
+                  <div class="type__list_volume">
+                    <p class="text_list_vol">5 литров</p>
+                  </div>
+                  <div class="type__list_volume">
+                    <p class="text_list_vol">5 литров</p>
+                  </div>
+                  <div class="type__list_volume">
+                    <p class="text_list_vol">5 литров</p>
+                  </div>
+                  <div class="type__list_volume">
+                    <p class="text_list_vol">5 литров</p>
+                  </div>
+                  <div class="type__list_volume">
+                    <p class="text_list_vol">5 литров</p>
+                  </div>
+                  <div class="type__list_volume">
+                    <p class="text_list_vol">5 литров</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn__sorting_center sett__typ">Тип </a
+              ><a href="#" class="btn__sorting_center sett_category">Категория </a
+              ><a href="#" class="btn__sorting_center sett_touch">Назначение </a
+              ><a href="#" class="btn__sorting_center sett_sorting">Бренд </a
               ><a href="#" class="btn__sorting_right">Сортировка</a>
+              <div class="wrapp_sor_List">
+                <div class="sortin__list">
+                  <div class="type__btn_sort">
+                    <a href="#" class="btn_sor">Сортировка</a>
+                  </div>
+                  <div class="type__list_sort_big">
+                    <p class="text_list_sort">по возрастанию цены</p>
+                  </div>
+                  <div class="type__list_sort">
+                    <p class="text_list_sort">по возрастанию цены</p>
+                  </div>
+                  <div class="type__list_sort">
+                    <p class="text_list_sort">по возрастанию цены</p>
+                  </div>
+                  <div class="type__list_sort">
+                    <p class="text_list_sort">по возрастанию цены</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- /.filter -->
@@ -292,8 +340,7 @@
                 <!-- /.sub__info__card -->
               </div>
               <!-- /.card__botlle -->
-            </div>
-            <div class="strip__sub">
+
               <div class="card__botlle">
                 <div class="sup__info__card">
                   <p class="round__hot"></p>
@@ -434,7 +481,7 @@
                 <!-- /.sub__info__card -->
               </div>
               <!-- /.card__botlle -->
-              <div class="card__botlle">
+              <div class="card__botlle side_sett">
                 <div class="sup__info__card">
                   <p class="round__hot"></p>
                   <p class="round_percent">%</p>
@@ -477,14 +524,227 @@
               </div>
               <!-- /.card__botlle -->
             </div>
+            
             <div class="full">
               <a class="btn__full_catalog">Полный каталог</a>
             </div>
           </div>
           <!-- /.card__catalog -->
+          <div class="bg_modal">
+            <div class="modal__catalog_wrapp">
+              <div class="modal__catalog">
+                <div class="wrapp_close">
+                  <h3 class="mod__cat">Быстрый заказ</h3>
+                  <a href="#" class="close__modal_wind"></a>
+                </div>
+                <div class="basket__strip">
+                  <div class="block_mod_img">
+                    <img
+                      src="../img/icon/botmod.svg"
+                      alt="img"
+                      class="bott_mod"
+                    />
+                  </div>
+                  <!-- /.block_mod_img -->
+                  <div class="text_mod_strip">
+                    <h3 class="title_prod_mod">
+                      EsonStyle (ЕсонСтайл)<br />- фитнес резинки
+                    </h3>
+                    <p class="text_mod_prod">
+                      Природная питьевая вода высшего<br />качества,
+                      озонированная, рекомендована<br />детям от 3-х лет
+                    </p>
+                  </div>
+                  <!-- /.text_mod_strip -->
+                  <div class="counter_mod">
+                    <p class="round_lite"></p>
+                    <p class="round_lite_proc">%</p>
+                    <p class="counter sett_left">0</p>
+                    <p class="plus__modal">+</p>
+                    <p class="minus__modal">-</p>
+                    <div class="money sett__money">
+                      <span class="money__discount">220 ₽ </span
+                      ><span class="money__nodiscount">399 ₽</span>
+                    </div>
+                    <!-- /.money -->
+                    <a href="#" class="close__strip"></a>
+                  </div>
+                  <!-- /.counter_mod -->
+                </div>
+                <!-- /.basket__strip -->
+                <div class="basket__strip">
+                  <div class="block_mod_img">
+                    <img
+                      src="../img/icon/botmod.svg"
+                      alt="img"
+                      class="bott_mod"
+                    />
+                  </div>
+                  <!-- /.block_mod_img -->
+                  <div class="text_mod_strip">
+                    <h3 class="title_prod_mod">
+                      EsonStyle (ЕсонСтайл)<br />- фитнес резинки
+                    </h3>
+                    <p class="text_mod_prod">
+                      Природная питьевая вода высшего<br />качества,
+                      озонированная, рекомендована<br />детям от 3-х лет
+                    </p>
+                  </div>
+                  <!-- /.text_mod_strip -->
+                  <div class="counter_mod">
+                    <p class="round_lite"></p>
+                    <p class="round_lite_proc">%</p>
+                    <p class="counter sett_left">0</p>
+                    <p class="plus__modal">+</p>
+                    <p class="minus__modal">-</p>
+                    <div class="money sett__money">
+                      <span class="money__discount">220 ₽ </span
+                      ><span class="money__nodiscount">399 ₽</span>
+                    </div>
+                    <!-- /.money -->
+                    <a href="#" class="close__strip"></a>
+                  </div>
+                  <!-- /.counter_mod -->
+                </div>
+                <!-- /.basket__strip -->
+                <div class="basket__strip">
+                  <div class="block_mod_img">
+                    <img
+                      src="../img/icon/botmod.svg"
+                      alt="img"
+                      class="bott_mod"
+                    />
+                  </div>
+                  <!-- /.block_mod_img -->
+                  <div class="text_mod_strip">
+                    <h3 class="title_prod_mod">
+                      EsonStyle (ЕсонСтайл)<br />- фитнес резинки
+                    </h3>
+                    <p class="text_mod_prod">
+                      Природная питьевая вода высшего<br />качества,
+                      озонированная, рекомендована<br />детям от 3-х лет
+                    </p>
+                  </div>
+                  <!-- /.text_mod_strip -->
+                  <div class="counter_mod">
+                    <p class="round_lite"></p>
+                    <p class="round_lite_proc">%</p>
+                    <p class="counter sett_left">0</p>
+                    <p class="plus__modal">+</p>
+                    <p class="minus__modal">-</p>
+                    <div class="money sett__money">
+                      <span class="money__discount">220 ₽ </span
+                      ><span class="money__nodiscount">399 ₽</span>
+                    </div>
+                    <!-- /.money -->
+                    <a href="#" class="close__strip"></a>
+                  </div>
+                  <!-- /.counter_mod -->
+                </div>
+                <!-- /.basket__strip -->
+                <div class="basket__strip">
+                  <div class="block_mod_img">
+                    <img
+                      src="../img/icon/botmod.svg"
+                      alt="img"
+                      class="bott_mod"
+                    />
+                  </div>
+                  <!-- /.block_mod_img -->
+                  <div class="text_mod_strip">
+                    <h3 class="title_prod_mod">
+                      EsonStyle (ЕсонСтайл)<br />- фитнес резинки
+                    </h3>
+                    <p class="text_mod_prod">
+                      Природная питьевая вода высшего<br />качества,
+                      озонированная, рекомендована<br />детям от 3-х лет
+                    </p>
+                  </div>
+                  <!-- /.text_mod_strip -->
+                  <div class="counter_mod">
+                    <p class="round_lite"></p>
+                    <p class="round_lite_proc">%</p>
+                    <p class="counter sett_left">0</p>
+                    <p class="plus__modal">+</p>
+                    <p class="minus__modal">-</p>
+                    <div class="money sett__money">
+                      <span class="money__discount">220 ₽ </span
+                      ><span class="money__nodiscount">399 ₽</span>
+                    </div>
+                    <!-- /.money -->
+                    <a href="#" class="close__strip"></a>
+                  </div>
+                  <!-- /.counter_mod -->
+                </div>
+                <!-- /.basket__strip -->
+              </div>
+              <!-- /.modal__catalog -->
+              <div class="form__modal">
+                <form action="#" class="form_bran_pan">
+                  <div class="cont_input">
+                    <input
+                      type="text"
+                      class="panel_bran"
+                      placeholder="Ваше имя"
+                    />
+                    <input
+                      type="text"
+                      class="panel_bran"
+                      placeholder="Ваш телефон"
+                    />
+                  </div>
+                  <!-- /.cont_input -->
+                  <div class="btn__ckeckid">
+                    <a href="" class="btn_panel_bran_open">Перезвоните мне</a>
+                    <div class="check_box">
+                      <label class="label"
+                        ><input type="checkbox" class="checkbox" />
+                        <span class="fake"></span>
+                        <span class="text_chek_panel"
+                          ><span class="text__check"
+                            >Согласие на обработку </span
+                          ><span class="text__check_sub"
+                            >персональных данных</span
+                          ></span
+                        ></label
+                      >
+                    </div>
+                  </div>
+                </form>
+                <!-- /.form_bran_panel -->
+              </div>
+            </div>
+            <!-- /.modal__catalog_wrapp -->
+          </div>
+          <div class="bg__modal_two">
+            <div class="modal_thank">
+              <a href="#" class="close_thank"></a>
+              <img
+                src="../img/icon/shoppingcartBig.svg"
+                alt=""
+                class="cart_thank"
+              />
+              <p class="text_thank">
+                Спасибо, Ваш товар добавлен<br />в корзину!
+              </p>
+              <div class="block_btn_thank">
+                <a href="" class="proceed">Продолжить покупки</a>
+                <a href="" class="issue">Оформить заказ</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal__free_bg">
+            <div class="wrapp__free">
+              <div class="modal__free">
+                <span class="on"></span>
+                <p class="text_on">Заявка принята</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- /.catalog -->
+
       <section class="Benn_oppo">
         <div class="container">
           <h3 class="title__oppo">Наши преимущества</h3>
@@ -594,6 +854,7 @@
         </div>
       </section>
       <!-- /.opportunities -->
+
       <section class="certificates">
         <div class="container">
           <h3 class="sertic__title">Сертификаты и разрешения</h3>
@@ -610,12 +871,13 @@
         </div>
       </section>
       <!-- /.certificates -->
+
       <section class="history__pet">
         <div class="container">
           <div class="block__prod__video">
             <div class="text_his">
               <h3 class="prod_v_title">
-                История нашего производства<br />ПЭТ тары
+                История нашего производства <br />ПЭТ тары
               </h3>
               <p class="text_pet_line">
                 Компания «АртПэт» предлагает клиентам полный комплекс услуг:
@@ -640,7 +902,7 @@
               </p>
             </div>
             <div class="video__panel__prod">
-              <div class="block__brand_el">
+              <div class="block__brand_el_prod">
                 <div class="elipse_play_line">
                   <div class="elipse__one_line">
                     <div class="elipse__two_line">
@@ -662,6 +924,7 @@
         </div>
       </section>
       <!-- /.history__pet -->
+
       <div class="price_block">
         <h3 class="price__title">Стоимость заказа</h3>
         <p class="sub__price__title">
@@ -708,13 +971,14 @@
           </div>
         </div>
       </div>
+
       <section class="stock">
         <div class="container">
           <h3 class="stock__title">Склад готовой продукции</h3>
           <div class="block_stock__card">
             <div class="card_stock">
               <p class="text__stock">
-                <span class="white_big">Склад готовой<br />продукции</span>
+                <span class="white_big">Склад готовой <br />продукции</span>
                 площадью<br />2000 кв.м.
               </p>
             </div>
@@ -724,7 +988,7 @@
               <!-- /.sup__blck -->
               <div class="sub_blck">
                 <p class="sub_text_doub">
-                  <span class="white_big">Склад заготовок</span><br />под
+                  <span class="white_big">Склад заготовок </span><br />под
                   изготовление<br />матриц
                 </p>
               </div>
@@ -732,7 +996,7 @@
             <!-- /.card_stock -->
             <div class="card_stock_free">
               <p class="text__stock">
-                <span class="white_big">Упакованная<br />продукция</span> на
+                <span class="white_big">Упакованная <br />продукция</span> на
                 складе,<br />до 2 400 000 ед.
               </p>
             </div>
@@ -798,6 +1062,7 @@
         </div>
       </section>
       <!-- /.stock -->
+
       <section class="question__answer">
         <div class="container">
           <h3 class="answer__title">Вопросы & ответы</h3>
@@ -876,6 +1141,7 @@
         </div>
       </section>
       <!-- /.question__answer -->
+
       <div class="map_company">
         <script
           type="text/javascript"
@@ -884,6 +1150,7 @@
           src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afdbb68d861f95d6505f9c1e5ab7ead935103235d3ed657117fdaa0d00ff2726f&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"
         ></script>
       </div>
+     
     </main>
     <footer class="footer">
       <div class="container">

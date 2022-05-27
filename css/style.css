@@ -12,6 +12,8 @@ html {
   overflow-x: hidden;
 }
 
+
+
 li {
   list-style-type: none;
 }
@@ -334,9 +336,19 @@ input {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 50px;
   line-height: 55px;
 
+  color: #ffffff;
+}
+
+.title__time-prod{
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 55px;
+line-height: 83px;
   color: #ffffff;
 }
 
@@ -2892,6 +2904,28 @@ right: 211px;
   display: flex;
   justify-content: space-between;
   margin-top: 88px;
+  padding-bottom: 100px;
+}
+
+.line__brand_prod{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 88px;
+
+}
+
+.line__line_brand{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 88px;
+  padding-bottom: 100px;
+}
+
+.line__brand_spill{
+  margin-top: 88px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .brand__time {
@@ -2901,6 +2935,9 @@ right: 211px;
   font-weight: 700;
   font-size: 72px;
   line-height: 83px;
+  display: flex;
+  max-width: 799px;
+  width: 100%;
 }
 
 .bottle_brand {
@@ -2922,7 +2959,24 @@ right: 211px;
   color: #b7e1f3;
   margin-bottom: 80px;
   z-index: 1;
+  max-width: 799px;
+  width: 100%;
 }
+
+.tline__brand{
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color: #b7e1f3;
+  margin-bottom: 80px;
+  z-index: 1;
+  max-width: 615px;
+  width: 100%;
+}
+
+
 
 .brand__btn {
   font-family: "Ubuntu";
@@ -2956,6 +3010,9 @@ right: 211px;
   line-height: 18px;
   color: #ffffff;
   z-index: 1;
+  display: flex;
+  max-width: 180px;
+  width: 100%px;
 }
 
 .elipse__one {
@@ -3034,13 +3091,14 @@ right: 211px;
 /*==================================================================================
                                       tabs__brand
 =====================================================================================*/
-.tabs__brand {
+.tabs__brand_section {
   margin-top: 60px;
   padding-bottom: 50px;
 }
 .block__tabs {
-  display: flex;
-  justify-content: space-between;
+display: flex;
+gap: 30px 118px;
+flex-wrap: wrap;
 }
 
 .tabs__brand {
@@ -3048,6 +3106,8 @@ right: 211px;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  max-width: 297px;
+  width: 100%;
 }
 
 .icon__brand__tab {
@@ -3357,6 +3417,8 @@ right: 211px;
   align-items: center;
   color: #ffffff;
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.15);
+  max-width: 180px ;
+  width: 100%;
 }
 
 .left__water {
@@ -3724,6 +3786,9 @@ right: 211px;
   padding-top: 40px;
   margin-bottom: 16px;
   padding-left: 40px;
+  display: flex;
+  max-width: 477px;
+  width: 100%;
 }
 
 .right__cont_bran {
@@ -3733,6 +3798,8 @@ right: 211px;
 .cont_input {
   display: flex;
 }
+
+
 
 .text__bran {
   font-family: "Ubuntu";
@@ -3744,6 +3811,7 @@ right: 211px;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 410px;
+  display: flex;
 }
 
 .panel_bran {
@@ -3813,7 +3881,8 @@ right: 211px;
   font-size: 44px;
   line-height: 52px;
   color: #000000;
-
+  max-width: 874px;
+  width: 100%;
   margin-bottom: 46px;
 }
 
@@ -3845,6 +3914,8 @@ right: 211px;
   font-size: 16px;
   line-height: 20px;
   color: #828282;
+  max-width: 169px;
+  width: 100%;
 }
 
 .cont_map {
@@ -3959,6 +4030,23 @@ right: 211px;
   line-height: 24px;
   text-align: center;
   color: #828282;
+  display: flex;
+  max-width: 320px;
+  width: 100%;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+
+.line_title__promo{
+  max-width:1163px;
+  width: 100%;
+  font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 83px;
+color: #FFFFFF;
 }
 
 .text__spill {
@@ -4345,7 +4433,7 @@ line-height: 30px;
 .line_img {
   position: absolute;
   top: 40px;
-  right: -210px;
+  right: -100px;
 }
 
 .block__pos_our {
@@ -4448,6 +4536,12 @@ line-height: 30px;
   line-height: 21px;
   text-align: center;
   color: #828282;
+  display: flex;
+  max-width: 696px;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .block__card__comp {
@@ -4552,6 +4646,9 @@ line-height: 30px;
   line-height: 21px;
   text-align: center;
   color: #828282;
+  max-width: 696px;
+  width: 100%;
+  margin: auto;
 }
 .block__elment_prod {
   display: flex;
@@ -4664,6 +4761,8 @@ line-height: 30px;
   font-size: 14px;
   line-height: 20px;
   color: #7c7c7c;
+  max-width: 229px;
+  width: 100%;
 }
 
 .block__form__video {
@@ -4683,7 +4782,10 @@ line-height: 30px;
 }
 
 .block__form__line {
-  margin-top: 60px;
+padding-top: 100px;
+  max-width: 1544px;
+  margin: auto;
+ margin-bottom: 80px;
 }
 
 .block__right_form {
@@ -4788,6 +4890,8 @@ line-height: 30px;
   font-size: 18px;
   line-height: 30px;
   color: #828282;
+  max-width: 522px;
+  display: flex;
 }
 
 .input__Line {
@@ -4994,6 +5098,7 @@ line-height: 30px;
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /*==================================================================================
@@ -5029,6 +5134,7 @@ line-height: 30px;
   justify-content: center;
   color: #828282;
   margin-bottom: 20px;
+
 }
 
 .wrapp__price {
@@ -5116,6 +5222,8 @@ line-height: 30px;
   line-height: 36px;
   color: #828282;
   margin-bottom: 48px;
+  max-width: 616px;
+  width: 100%;
 }
 
 .btn_last {
@@ -5276,6 +5384,9 @@ line-height: 30px;
   line-height: 41px;
   text-align: center;
   color: #ffffff;
+  max-width: 407px;
+  width: 100%;
+  margin: auto;
 }
 
 .white_big {
@@ -5333,6 +5444,9 @@ line-height: 30px;
   line-height: 41px;
   text-align: center;
   color: #ffffff;
+  margin: auto;
+  max-width: 407px;
+  width: 100%;
 }
 
 .ifo__sett_stock {
@@ -6220,6 +6334,13 @@ border: 1px solid #DDEAF1;
 justify-content: center;
 }
 
+
+
+/* ++++++++++++++++++++++++++ */
+
+.block__brand_el_prod{
+  display: none;
+}
 
 
 
