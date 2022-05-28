@@ -404,7 +404,7 @@ line-height: 83px;
   top: -75px;
   left: 50px;
   margin-top: 100px;
-  max-width: 319px;
+  max-width: 270px;
   width: 100%;
   background: #FFFFFF;
 box-shadow: 0px 20px 50px rgba(5, 124, 169, 0.15);
@@ -429,8 +429,8 @@ border-radius: 50%;
 width: 23px;
 height: 23px;
 justify-content: center;
-top: 215px;
-right: 255px;
+top: 210px;
+right: 205px;
 }
 
 .gren_round_two{
@@ -449,8 +449,8 @@ border-radius: 50%;
 width: 23px;
 height: 23px;
 justify-content: center;
-top: 286px;
-right: 255px;
+top: 281px;
+right: 205px;
 }
 
 .close__burger{
@@ -939,6 +939,26 @@ margin-bottom: 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.sett_brand_close{
+  top: 30px;
+  left: 70px;
+}
+
+.sett_line_close{
+  top: 60px;
+  left: 70px;
+}
+
+.sett_prod_close{
+  top: 30px;
+  left: 70px;
+}
+
+.sett_spil_close{
+  top: 30px;
+  left: 70px;
 }
 
 .title_prod_mod{
@@ -2902,6 +2922,10 @@ right: 211px;
   background: #00b2d0;
 }
 
+.padd_brand{
+  padding-bottom: 180px;
+}
+
 .block__brand_prom {
   display: flex;
   justify-content: space-between;
@@ -2912,7 +2936,6 @@ right: 211px;
   display: flex;
   justify-content: space-between;
   margin-top: 88px;
-  padding-bottom: 100px;
 }
 
 .line__brand_prod{

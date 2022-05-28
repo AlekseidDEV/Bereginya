@@ -12,6 +12,11 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
+    <script src="./js/wrappwindow.js" defer></script>
+    <script src="./js/lists.js" defer></script>
+    <script src="./js/emailModal.js" defer></script>
+    <script src="./js/catalogModal.js" defer></script>
+    <script src="./js/burger.js" defer></script>
     <title>Каталог</title>
 </head>
 <body>
@@ -37,7 +42,7 @@
                 </div>
                 <div class="span__block_not">
                   <img src="./img/icon/interface.svg" alt="img" class="what" />
-                  <p class="adress__email">info@bereginya.ru — написать письмо</p>
+                  <a class="adress__email">info@bereginya.ru — написать письмо</a>
                 </div>
               </div>
             </div>
@@ -47,6 +52,60 @@
     <main>
         <section class="promo_catalog">
             <div class="container">
+              <div class="modal__bg_email">
+                <div class="wrapp__email">
+                  <div class="modal__email">
+                    <h3 class="tile__modal_email">Мы вам напишем</h3>
+                    <p class="text_mod_email">
+                      Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся
+                      рассылкой рекламных сообщений, а так же<br />не передаем
+                      контактные данные третьим лицам
+                    </p>
+                    <a href="#" class="close_email_mod"></a>
+                    <div class="input_name_block">
+                      <input
+                        type="text"
+                        class="modal_email_un"
+                        placeholder="Ваше имя"
+                      />
+                      <input
+                        type="text"
+                        class="modal_email_un"
+                        placeholder="Ваша e-mail"
+                      />
+                      <input
+                        type="text"
+                        class="modal_email_un"
+                        placeholder="Ваш телефон"
+                      />
+                    </div>
+                    <!-- /.input_name_block -->
+                    <div class="massenge">
+                      <input
+                        type="text"
+                        class="mes_input"
+                        placeholder="Опишите свою проблему ..."
+                      />
+                    </div>
+                    <!-- /.massenge -->
+                    <div class="btn__ckeckid">
+                      <a href="" class="btn_panel_bran">Перезвоните мне</a>
+                      <div class="check_box">
+                        <label class="label"
+                          ><input type="checkbox" class="checkbox" />
+                          <span class="fake"></span>
+                          <span class="text_chek_panel"
+                            ><span class="text__check">Согласие на обработку </span
+                            ><span class="text__check_sub"
+                              >персональных данных</span
+                            ></span
+                          ></label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="sub_prom_cat">
                 <div class="block__logo">
                   <div class="burger__menu">
@@ -77,9 +136,111 @@
                       class="call__icon"
                     />
     
-                    <p class="numb__call">8 (903) 578-85-77</p>
+                    <a class="numb__call">8 (903) 578-85-77</a>
     
                     <a href="#" class="requestcall"> заказать звонок </a>
+                  </div>
+                </div>
+              </div>
+              <div class="window_close">
+                <div class="drop__wrapp sett_line_close">
+                  <div class="drop_close">
+                    <a href="#" class="close__burger"></a>
+                    <div class="dropdown_box">
+                      <div class="box__link">
+                        <a href="./branding.html" class="link__page"
+                          >Брендирование воды</a
+                        >
+                      </div>
+                    </div>
+                    <div class="dropdown_box">
+                      <div class="box__link">
+                        <a href="./spill.html" class="link__page_cont"
+                          >Контрактный розлив</a
+                        >
+                      </div>
+                    </div>
+                    <div class="dropdown_box">
+                      <div class="box__link">
+                        <a href="./line.html" class="link__page_pump"
+                          >Вода на розлив</a
+                        >
+                      </div>
+                    </div>
+                    <div class="dropdown_box">
+                      <div class="box__link">
+                        <a href="./catalog.html" class="link__page"
+                          >Напитки оптом</a
+                        >
+                        <span class="gren_round">%</span>
+                      </div>
+                    </div>
+                    <div class="dropdown_box">
+                      <div class="box__link">
+                        <a href="./catalog.html" class="link__page">Вода оптом</a>
+                        <span class="gren_round_two">%</span>
+                      </div>
+                    </div>
+                    <div class="dropdown_box">
+                      <div class="box__link">
+                        <a href="./prod.html" class="link__page_plast"
+                          >Изготовление ПЭТ тары</a
+                        >
+                      </div>
+                    </div>
+                    <div class="dropdown_box">
+                      <div class="box__link">
+                        <a href="#" class="link__page_wat">Бренды</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrapp_window">
+                <div class="modal_window">
+                  <div class="wind">
+                    <div class="close__modal">
+                      <h3 class="title__wind">Мы вам перезвоним</h3>
+                      <a href="#" class="close_btn"></a>
+                    </div>
+                    <p class="text__wind">
+                      Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся
+                      рассылкой рекламных сообщений, а так же не<br />передаем
+                      контактные данные третьим лицам
+                    </p>
+                    <form action="#" class="form_bran_modal">
+                      <div class="cont_input">
+                        <input
+                          type="text"
+                          class="panel_bran"
+                          placeholder="Ваше имя"
+                        />
+                        <input
+                          type="text"
+                          class="panel_bran"
+                          placeholder="Ваш телефон"
+                        />
+                      </div>
+                      <!-- /.cont_input -->
+                      <div class="btn__ckeckid">
+                        <a href="#" class="btn_panel_bran">Перезвоните мне</a>
+                        <div class="check_box">
+                          <label class="label"
+                            ><input type="checkbox" class="checkbox" />
+                            <span class="fake"></span>
+                            <span class="text_chek_panel"
+                              ><span class="text__check"
+                                >Согласие на обработку </span
+                              ><span class="text__check_sub"
+                                >персональных данных</span
+                              ></span
+                            ></label
+                          >
+                        </div>
+                      </div>
+                    </form>
+                    <!-- /.form_bran_panel -->
                   </div>
                 </div>
               </div>
@@ -1100,6 +1261,192 @@
                    <!-- /.page_prod -->
                 </div>
                 <!-- /.block__catalog -->
+                <div class="bg_modal">
+                  <div class="modal__catalog_wrapp">
+                    <div class="modal__catalog">
+                      <div class="wrapp_close">
+                        <h3 class="mod__cat">Быстрый заказ</h3>
+                        <a href="#" class="close__modal_wind"></a>
+                      </div>
+                      <div class="basket__strip">
+                        <div class="block_mod_img">
+                          <img
+                            src="./img/icon/botmod.svg"
+                            alt="img"
+                            class="bott_mod"
+                          />
+                        </div>
+                        <!-- /.block_mod_img -->
+                        <div class="text_mod_strip">
+                          <h3 class="title_prod_mod">
+                            EsonStyle (ЕсонСтайл)<br />- фитнес резинки
+                          </h3>
+                          <p class="text_mod_prod">
+                            Природная питьевая вода высшего<br />качества,
+                            озонированная, рекомендована<br />детям от 3-х лет
+                          </p>
+                        </div>
+                        <!-- /.text_mod_strip -->
+                        <div class="counter_mod">
+                          <p class="round_lite"></p>
+                          <p class="round_lite_proc">%</p>
+                          <p class="counter sett_left">0</p>
+                          <p class="plus__modal">+</p>
+                          <p class="minus__modal">-</p>
+                          <div class="money sett__money">
+                            <span class="money__discount">220 ₽ </span
+                            ><span class="money__nodiscount">399 ₽</span>
+                          </div>
+                          <!-- /.money -->
+                          <a href="#" class="close__strip"></a>
+                        </div>
+                        <!-- /.counter_mod -->
+                      </div>
+                      <!-- /.basket__strip -->
+                      <div class="basket__strip">
+                        <div class="block_mod_img">
+                          <img
+                            src="./img/icon/botmod.svg"
+                            alt="img"
+                            class="bott_mod"
+                          />
+                        </div>
+                        <!-- /.block_mod_img -->
+                        <div class="text_mod_strip">
+                          <h3 class="title_prod_mod">
+                            EsonStyle (ЕсонСтайл)<br />- фитнес резинки
+                          </h3>
+                          <p class="text_mod_prod">
+                            Природная питьевая вода высшего<br />качества,
+                            озонированная, рекомендована<br />детям от 3-х лет
+                          </p>
+                        </div>
+                        <!-- /.text_mod_strip -->
+                        <div class="counter_mod">
+                          <p class="round_lite"></p>
+                          <p class="round_lite_proc">%</p>
+                          <p class="counter sett_left">0</p>
+                          <p class="plus__modal">+</p>
+                          <p class="minus__modal">-</p>
+                          <div class="money sett__money">
+                            <span class="money__discount">220 ₽ </span
+                            ><span class="money__nodiscount">399 ₽</span>
+                          </div>
+                          <!-- /.money -->
+                          <a href="#" class="close__strip"></a>
+                        </div>
+                        <!-- /.counter_mod -->
+                      </div>
+                      <!-- /.basket__strip -->
+                      <div class="basket__strip">
+                        <div class="block_mod_img">
+                          <img
+                            src="./img/icon/botmod.svg"
+                            alt="img"
+                            class="bott_mod"
+                          />
+                        </div>
+                        <!-- /.block_mod_img -->
+                        <div class="text_mod_strip">
+                          <h3 class="title_prod_mod">
+                            EsonStyle (ЕсонСтайл)<br />- фитнес резинки
+                          </h3>
+                          <p class="text_mod_prod">
+                            Природная питьевая вода высшего<br />качества,
+                            озонированная, рекомендована<br />детям от 3-х лет
+                          </p>
+                        </div>
+                        <!-- /.text_mod_strip -->
+                        <div class="counter_mod">
+                          <p class="round_lite"></p>
+                          <p class="round_lite_proc">%</p>
+                          <p class="counter sett_left">0</p>
+                          <p class="plus__modal">+</p>
+                          <p class="minus__modal">-</p>
+                          <div class="money sett__money">
+                            <span class="money__discount">220 ₽ </span
+                            ><span class="money__nodiscount">399 ₽</span>
+                          </div>
+                          <!-- /.money -->
+                          <a href="#" class="close__strip"></a>
+                        </div>
+                        <!-- /.counter_mod -->
+                      </div>
+                      <!-- /.basket__strip -->
+                      <div class="basket__strip">
+                        <div class="block_mod_img">
+                          <img
+                            src="./img/icon/botmod.svg"
+                            alt="img"
+                            class="bott_mod"
+                          />
+                        </div>
+                        <!-- /.block_mod_img -->
+                        <div class="text_mod_strip">
+                          <h3 class="title_prod_mod">
+                            EsonStyle (ЕсонСтайл)<br />- фитнес резинки
+                          </h3>
+                          <p class="text_mod_prod">
+                            Природная питьевая вода высшего<br />качества,
+                            озонированная, рекомендована<br />детям от 3-х лет
+                          </p>
+                        </div>
+                        <!-- /.text_mod_strip -->
+                        <div class="counter_mod">
+                          <p class="round_lite"></p>
+                          <p class="round_lite_proc">%</p>
+                          <p class="counter sett_left">0</p>
+                          <p class="plus__modal">+</p>
+                          <p class="minus__modal">-</p>
+                          <div class="money sett__money">
+                            <span class="money__discount">220 ₽ </span
+                            ><span class="money__nodiscount">399 ₽</span>
+                          </div>
+                          <!-- /.money -->
+                          <a href="#" class="close__strip"></a>
+                        </div>
+                        <!-- /.counter_mod -->
+                      </div>
+                      <!-- /.basket__strip -->
+                    </div>
+                    <!-- /.modal__catalog -->
+                    <div class="form__modal">
+                      <form action="#" class="form_bran_pan">
+                        <div class="cont_input">
+                          <input
+                            type="text"
+                            class="panel_bran"
+                            placeholder="Ваше имя"
+                          />
+                          <input
+                            type="text"
+                            class="panel_bran"
+                            placeholder="Ваш телефон"
+                          />
+                        </div>
+                        <!-- /.cont_input -->
+                        <div class="btn__ckeckid">
+                          <a href="" class="btn_panel_bran_open">Перезвоните мне</a>
+                          <div class="check_box">
+                            <label class="label"
+                              ><input type="checkbox" class="checkbox" />
+                              <span class="fake"></span>
+                              <span class="text_chek_panel"
+                                ><span class="text__check"
+                                  >Согласие на обработку </span
+                                ><span class="text__check_sub"
+                                  >персональных данных</span
+                                ></span
+                              ></label
+                            >
+                          </div>
+                        </div>
+                      </form>
+                      <!-- /.form_bran_panel -->
+                    </div>
+                  </div>
+                  <!-- /.modal__catalog_wrapp -->
+                </div>
             </div>
         </section>
 

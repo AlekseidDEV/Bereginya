@@ -12,6 +12,10 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
+    <script src="./js/burger.js" defer></script>
+    <script src="./js/scroll.js" defer></script>
+    <script src="./js/wrappwindow.js" defer></script>
+    <script src="./js/emailModal.js" defer></script>
     <title>Контактный розлив</title>
   </head>
   <body>
@@ -35,7 +39,7 @@
             </div>
             <div class="span__block_not">
               <img src="./img/icon/interface.svg" alt="img" class="what" />
-              <p class="adress__email">info@bereginya.ru — написать письмо</p>
+              <a class="adress__email">info@bereginya.ru — написать письмо</a>
             </div>
           </div>
         </div>
@@ -44,6 +48,60 @@
     <main>
       <section class="promo_brand">
         <div class="container">
+          <div class="modal__bg_email">
+            <div class="wrapp__email">
+              <div class="modal__email">
+                <h3 class="tile__modal_email">Мы вам напишем</h3>
+                <p class="text_mod_email">
+                  Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся
+                  рассылкой рекламных сообщений, а так же<br />не передаем
+                  контактные данные третьим лицам
+                </p>
+                <a href="#" class="close_email_mod"></a>
+                <div class="input_name_block">
+                  <input
+                    type="text"
+                    class="modal_email_un"
+                    placeholder="Ваше имя"
+                  />
+                  <input
+                    type="text"
+                    class="modal_email_un"
+                    placeholder="Ваша e-mail"
+                  />
+                  <input
+                    type="text"
+                    class="modal_email_un"
+                    placeholder="Ваш телефон"
+                  />
+                </div>
+                <!-- /.input_name_block -->
+                <div class="massenge">
+                  <input
+                    type="text"
+                    class="mes_input"
+                    placeholder="Опишите свою проблему ..."
+                  />
+                </div>
+                <!-- /.massenge -->
+                <div class="btn__ckeckid">
+                  <a href="" class="btn_panel_bran">Перезвоните мне</a>
+                  <div class="check_box">
+                    <label class="label"
+                      ><input type="checkbox" class="checkbox" />
+                      <span class="fake"></span>
+                      <span class="text_chek_panel"
+                        ><span class="text__check">Согласие на обработку </span
+                        ><span class="text__check_sub"
+                          >персональных данных</span
+                        ></span
+                      ></label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="block__brand_prom">
             <div class="block__logo">
               <div class="burger__menu"><a href="#" class="buger"></a></div>
@@ -58,13 +116,18 @@
             </div>
             <div class="block__phone">
               <a href="#" class="search"></a>
+              <input
+              type="text"
+              class="search__active"
+              placeholder="Найдётся всё..."
+            />
               <div class="call">
                 <img
                   src="./img/icon/interface2.svg"
                   alt="img"
                   class="call__icon"
                 />
-                <p class="numb__call">8 (903) 578-85-77</p>
+                <a class="numb__call">8 (903) 578-85-77</a>
                 <a href="#" class="requestcall">заказать звонок</a>
               </div>
             </div>
@@ -111,8 +174,111 @@
                   />
                 </div>
                 <div class="round"><a href="#" class="down"></a></div>
+                <div class="wrapp_window">
+                  <div class="modal_window">
+                    <div class="wind">
+                      <div class="close__modal">
+                        <h3 class="title__wind">Мы вам перезвоним</h3>
+                        <a href="#" class="close_btn"></a>
+                      </div>
+                      <p class="text__wind">
+                        Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся
+                        рассылкой рекламных сообщений, а так же не<br />передаем
+                        контактные данные третьим лицам
+                      </p>
+                      <form action="#" class="form_bran_modal">
+                        <div class="cont_input">
+                          <input
+                            type="text"
+                            class="panel_bran"
+                            placeholder="Ваше имя"
+                          />
+                          <input
+                            type="text"
+                            class="panel_bran"
+                            placeholder="Ваш телефон"
+                          />
+                        </div>
+                        <!-- /.cont_input -->
+                        <div class="btn__ckeckid">
+                          <a href="#" class="btn_panel_bran">Перезвоните мне</a>
+                          <div class="check_box">
+                            <label class="label"
+                              ><input type="checkbox" class="checkbox" />
+                              <span class="fake"></span>
+                              <span class="text_chek_panel"
+                                ><span class="text__check"
+                                  >Согласие на обработку </span
+                                ><span class="text__check_sub"
+                                  >персональных данных</span
+                                ></span
+                              ></label
+                            >
+                          </div>
+                        </div>
+                      </form>
+                      <!-- /.form_bran_panel -->
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              
               <!-- главный блок конец -->
+            </div>
+          </div>
+          <div class="window_close">
+            <div class="drop__wrapp sett_spil_close">
+              <div class="drop_close">
+                <a href="#" class="close__burger"></a>
+                <div class="dropdown_box">
+                  <div class="box__link">
+                    <a href="./branding.html" class="link__page"
+                      >Брендирование воды</a
+                    >
+                  </div>
+                </div>
+                <div class="dropdown_box">
+                  <div class="box__link">
+                    <a href="./spill.html" class="link__page_cont"
+                      >Контрактный розлив</a
+                    >
+                  </div>
+                </div>
+                <div class="dropdown_box">
+                  <div class="box__link">
+                    <a href="./line.html" class="link__page_pump"
+                      >Вода на розлив</a
+                    >
+                  </div>
+                </div>
+                <div class="dropdown_box">
+                  <div class="box__link">
+                    <a href="./catalog.html" class="link__page"
+                      >Напитки оптом</a
+                    >
+                    <span class="gren_round">%</span>
+                  </div>
+                </div>
+                <div class="dropdown_box">
+                  <div class="box__link">
+                    <a href="./catalog.html" class="link__page">Вода оптом</a>
+                    <span class="gren_round_two">%</span>
+                  </div>
+                </div>
+                <div class="dropdown_box">
+                  <div class="box__link">
+                    <a href="./prod.html" class="link__page_plast"
+                      >Изготовление ПЭТ тары</a
+                    >
+                  </div>
+                </div>
+                <div class="dropdown_box">
+                  <div class="box__link">
+                    <a href="#" class="link__page_wat">Бренды</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -245,6 +411,32 @@
             <div class="sup__card">
               <div class="card__product">
                 <div class="circle">
+                  <img src="./img/Component3.png" alt="img" class="bereg" />
+                </div>
+                <a href="#" class="btn__product">Питьевая вода</a>
+              </div>
+              <div class="card__product">
+                <div class="circle">
+                  <img src="./img/Component3.png" alt="img" class="bereg" />
+                </div>
+                <a href="#" class="btn__product">Берегиня-1</a>
+              </div>
+              <div class="card__product">
+                <div class="circle">
+                  <img src="./img/Component1.png" alt="img" class="drink" />
+                </div>
+                <a href="#" class="btn__product">Газированные напитки</a>
+              </div>
+              <div class="card__product">
+                <div class="circle">
+                  <img src="./img/Component2.png" alt="img" class="bott" />
+                </div>
+                <a href="#" class="btn__product padd"
+                  >Ассортимент<br />питьевых вод</a
+                >
+              </div>
+              <div class="card__product">
+                <div class="circle">
                   <img src="./img/Component1.png" alt="img" class="drink" />
                 </div>
                 <a href="#" class="btn__product">Газированные напитки</a>
@@ -268,34 +460,6 @@
                   <img src="./img/Component3.png" alt="img" class="bereg" />
                 </div>
                 <a href="#" class="btn__product">Берегиня-1</a>
-              </div>
-            </div>
-            <div class="sub__card">
-              <div class="card__product">
-                <div class="circle">
-                  <img src="./img/Component3.png" alt="img" class="bereg" />
-                </div>
-                <a href="#" class="btn__product">Питьевая вода</a>
-              </div>
-              <div class="card__product">
-                <div class="circle">
-                  <img src="./img/Component3.png" alt="img" class="bereg" />
-                </div>
-                <a href="#" class="btn__product">Берегиня-1</a>
-              </div>
-              <div class="card__product">
-                <div class="circle">
-                  <img src="./img/Component1.png" alt="img" class="drink" />
-                </div>
-                <a href="#" class="btn__product">Газированные напитки</a>
-              </div>
-              <div class="card__product">
-                <div class="circle">
-                  <img src="./img/Component2.png" alt="img" class="bott" />
-                </div>
-                <a href="#" class="btn__product padd"
-                  >Ассортимент<br />питьевых вод</a
-                >
               </div>
             </div>
           </div>
