@@ -34,6 +34,14 @@ input {
   outline: none;
 }
 
+.wrapp_block_med{
+  display: flex;
+}
+
+.wrapp_med_soc{
+  display: flex;
+}
+
 /*==================================================================================
                                     HEADER
 =====================================================================================*/
@@ -5563,12 +5571,13 @@ padding-top: 100px;
 .catalog_page {
   background: #eef5f9;
   box-shadow: inset 0px 0px 40px rgba(46, 167, 213, 0.15);
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 .block__catalog {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .aside {
@@ -5590,6 +5599,20 @@ padding-top: 100px;
 
 .sett_cat {
   margin-top: 0;
+}
+
+.side__sett{
+  position: relative;
+}
+
+.wrapp_backet-cat{
+  position: absolute;
+  top: 0px;
+  left: 150px;
+}
+
+.wrapp__small_param{
+  width: 280px;
 }
 
 .catalog_prod_title {
@@ -6340,6 +6363,11 @@ justify-content: center;
 
 .block__brand_el_prod{
   display: none;
+}
+
+.container__text{
+  max-width: 1150px;
+  width: 100%;
 }
 
 
