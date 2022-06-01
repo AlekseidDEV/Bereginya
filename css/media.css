@@ -278,10 +278,11 @@
 @media (max-width: 414px){
     .title__time{
         font-size: 30px;
+        line-height: 35px;
     }
 
     .text__eat{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .time__text{
@@ -783,7 +784,7 @@
     }
 
     .text_ifo_block{
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
     }
 
@@ -1239,6 +1240,15 @@
 @media (max-width: 483px){
     .brand__time{
         font-size: 30px;
+        line-height: 35px;
+    }
+
+    .line__brand{
+        margin-top: 50px;
+    }
+
+    .text__brand_bloc{
+        padding-bottom: 40px;
     }
 }
 
@@ -1352,6 +1362,11 @@
 @media (max-width: 1676px){
     .block__our__water{
         flex-direction: column;
+    }
+
+    .our__water{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .text__warer{
@@ -2000,10 +2015,20 @@
 @media (max-width:414px){
     .line_title__promo{
         font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 17px;
+    }
+
+    .line__line_brand{
+        margin-top: 40px;
+    }
+    .promo_brand_line{
+        padding-bottom: 0;
     }
 
     .text__small_prom{
         font-size: 30px;
+        line-height: 35px;
     }
 }
 
@@ -2307,6 +2332,12 @@
     @media (max-width: 414px){
         .title__time-prod{
             font-size: 30px;
+            line-height: 35px;
+            margin-bottom: 17px;
+        }
+
+        .promo_brand_pet{
+            padding-bottom: 0;
         }
     }
 
@@ -2793,6 +2824,8 @@
     @media (max-width: 500px){
         .title__glass{
             font-size: 30px;
+            line-height: 38px;
+            margin-top: 15px;
         }
 
         .title__family{
